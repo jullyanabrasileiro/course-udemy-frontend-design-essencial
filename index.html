@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Site Portfólio - UX/UI Design</title>
+</head>
+
+<body>
+    <div class="sp-preloader">
+        <div class="sp-preloader-symbol">
+            <img class="sp-preloader-inner" src="images/jlogo-preloader.svg" alt="">
+            <p class="sp-text-white sp-mar-top-15">Carregando site...</p>
+        </div>
+    </div>
+
+    <div class="sp-overlay sp-toggle-modal"></div>
+    <div class="sp-menu-overlay sp-toggle-menu"></div>
+
+    <div class="sp-modal sp-bg-black" id="sp-modal-orcamento">
+        <div class="sp-modal-header">
+            <h1 class="sp-title sp-text-white">Solicite seu orçamento.</h1>
+
+            <button class="sp-close-modal sp-toggle-modal">X</button>
+        </div>
+
+        <div class="sp-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="sp-text-grey">Por favor informe os dados abaixo e eu entrarei em contato com vocês o mais breve possível.</p>
+                </div>
+            </div>
+            <div class="row sp-mar-top-15">
+                <div class="col-sm-12">
+                    <form action="sp-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 sp-mar-bottom-15">
+                                <label for="Nome" class="sp-text-grey">Nome</label>
+                                <input type="text" name="Nome" id="sp-nome" class="sp-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6 sp-mar-bottom-15">
+                                <label for="Email" class="sp-text-grey">Email</label>
+                                <input type="email" name="Email" id="sp-email" class="sp-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6 sp-mar-bottom-15">
+                                <label for="Telefone" class="sp-text-grey">Telefone</label>
+                                <input type="tel" name="Telefone" id="sp-telefone" class="sp-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6 sp-mar-bottom-15">
+                                <label for="Site" class="sp-text-grey">Site</label>
+                                <input type="text" name="Site" id="sp-site" class="sp-field">
+                            </div>
+                            <div class="col-sm-12 col-md-12 sp-mar-top-15">
+                                <label for="Mensagem" class="sp-text-grey">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
+                                <textarea name="Mensagem" id="sp-mensagem" class="sp-textarea" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="row sp-mar-top-15">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="sp-btn sp-btn-large sp-btn-white sp-btnblock">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="sp-topbar">
+        <div class="sp-logo">
+            <img src="images/jlogo.svg" alt="logo jullyana brasileiro">
+        </div>
+
+        <nav class="sp-menu">
+            <a href="index.html">Home</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <button class="sp-btn-menu-mobile sp-toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <nav class="sp-menu-mobile sp-menu-is-closed">
+        <a href="index.html">Home</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/sobre.html">Sobre</a>
+    </nav>
+
+    <div class="sp-contact-info sp-bg-black">
+        <div class="sp-contact-info-inner">
+            <h2 class="sp-title sp-text-white">Contato</h2>
+            <p>jullyana.brasileiro@gmail.com</p>
+            <p>+55 83 998874451</p>
+            <div class="sp-social-links">
+                <a class="sp-social" href="https://www.instagram.com/jullyanabrasileiro/">
+                    <img src="images/icon-instagram.svg" alt="icone instagram">
+                </a>
+                <a class="sp-social" href="https://www.behance.net/jullyanabrasileiro">
+                    <img src="images/icon-behance.svg" alt="icone behance">
+                </a>
+                <a class="sp-social" href="https://dribbble.com/Jullyanabrasileiro">
+                    <img src="images/icon-dribbble.svg" alt="icone dribbble">
+                </a>
+                <a class="sp-social" href="https://www.linkedin.com/in/jullyana-brasileiro/">
+                    <img src="images/icon-linkedin.svg" alt="icone linkedin">
+                </a>
+            </div>
+        </div>
+        <div class="sp-corner"></div>
+    </div>
+
+    <button class="sp-btn-contact">
+
+    </button>
+
+    <div class="sp-page-wrapper">
+        <section class="sp-full-height sp-first-section" id="sp-home-presentation">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 offset-md-2  sp-display-text">
+
+                        <h1 class="sp-title sp-text-white sp-title-big">Olá!</h1>
+                        <p class="sp-text-grey ">Meu nome é <span class="sp-text-white">Jullyana Brasileiro</span>. Sou uma jovem Designer residente no Brasil. <br><br>                            Acredito no Design para desenvolver e criar projetos que formem e conduzam nossa sociedade em direção a um mundo mais saudável e sustentável. Design é uma história a ser contada, em que cada detalhe tem uma grande razão e significado.
+                        </p>
+                        <button class="sp-btn sp-btn-medium sp-btn-white sp-mar-top-15 sp-toggle-modal">Solicite seu orçamento</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sp-scroll-down">
+                <div class="sp-arrow-down">
+                    <img src="images/arrow-down.svg" alt="Role a Página">
+                </div>
+            </div>
+        </section>
+
+        <section class="sp-full-height" id="sp-home-portfolio">
+            <div class="container-fluid sp-no-padding">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="sp-portfolio-navigator">
+                            <div class="sp-navigator-counter">
+                                <span class="sp-text-white">01</span>
+                            </div>
+                            <nav class="sp-item-navigator">
+                                <a href="#" class="sp-item-active" data-nav="1"></a>
+                                <a href="#" data-nav="2"></a>
+                                <a href="#" data-nav="3"></a>
+                                <a href="#" data-nav="4"></a>
+                                <a href="#" data-nav="5"></a>
+                            </nav>
+                            <div class="sp-items-next-prev sp-no-radius-left">
+                                <div class="sp-item-prev">
+                                    <ion-icon name="arrow-dropleft"></ion-icon>
+                                </div>
+
+                                <div class="sp-items-counter">
+                                    <span class="sp-current-slide">01</span>
+                                    /
+                                    <span class="sp-total-slide">04</span></div>
+
+                                <div class="sp-item-next">
+                                    <ion-icon name="arrow-dropright"></ion-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="sp-slider-container sp-full-height">
+                            <ul class="sp-slider-list">
+                                <li class="sp-portfolio-item sp-slide-active" data-slide="1">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="sp-portfolio-item-info sp-text-white sp-fade-from-left">
+                                                <h1 class="sp-title-medium sp-title sp-mar-bottom-15">North <br>- Branding</h1>
+                                                <p class="sp-mar-bottom-30">Descrição do projeto</br></p>
+                                                <button class="sp-btn sp-btn-large sp-btn-white">Ver Projeto</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sp-portfolio-item-thumb">
+                                                <div class="sp-portfolio-item-box sp-scale-right"></div>
+                                                <img src="images/projeto-north-branding.jpg" alt="" title="North Branding" class="sp-scale-up">
+                                                <button class="sp-btn sp-btn-small sp-btn-dark-grey">visite o site<ion-icon name="share-alt"></ion-icon></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-portfolio-item" data-slide="2">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="sp-portfolio-item-info sp-text-white">
+                                                <h1 class="sp-title-medium sp-title sp-mar-bottom-15">Administra <br>- Branding</h1>
+                                                <p class="sp-mar-bottom-30"> Descrição do projeto</p>
+                                                <button class="sp-btn sp-btn-large sp-btn-white">Ver Projeto</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sp-portfolio-item-thumb">
+                                                <div class="sp-portfolio-item-box"></div>
+                                                <img src="images/projeto-administra-branding.png" alt="" title="Administra Branding">
+                                                <button class="sp-btn sp-btn-small sp-btn-dark-grey">visite o site<ion-icon name="share-alt"></ion-icon></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-portfolio-item" data-slide="3">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="sp-portfolio-item-info sp-text-white">
+                                                <h1 class="sp-title-medium sp-title sp-mar-bottom-15">Skla <br>- Branding</h1>
+                                                <p class="sp-mar-bottom-30"> Descrição do projeto</p>
+                                                <button class="sp-btn sp-btn-large sp-btn-white">Ver Projeto</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sp-portfolio-item-thumb">
+                                                <div class="sp-portfolio-item-box"></div>
+                                                <img src="images/projeot-skla-branding.png" alt="" title="Skla Branding">
+                                                <button class="sp-btn sp-btn-small sp-btn-dark-grey">visite o site<ion-icon name="share-alt"></ion-icon></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-portfolio-item" data-slide="4">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="sp-portfolio-item-info sp-text-white">
+                                                <h1 class="sp-title-medium sp-title sp-mar-bottom-15">PB Ambiental <br>- Branding</h1>
+                                                <p class="sp-mar-bottom-30"> Descrição do projeto</p>
+                                                <button class="sp-btn sp-btn-large sp-btn-white">Ver Projeto</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sp-portfolio-item-thumb">
+                                                <div class="sp-portfolio-item-box"></div>
+                                                <img src="images/projeto-pb-ambiental-branding.png" alt="" title="PB Ambiental Branding">
+                                                <button class="sp-btn sp-btn-small sp-btn-dark-grey">visite o site<ion-icon name="share-alt"></ion-icon></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sp-portfolio-item" data-slide="5">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="sp-portfolio-item-info sp-text-white">
+                                                <h1 class="sp-title-medium sp-title sp-mar-bottom-15">Araújo Autopeças <br>- Branding</h1>
+                                                <p class="sp-mar-bottom-30"> Descrição do projeto</p>
+                                                <button class="sp-btn sp-btn-large sp-btn-white">Ver Projeto</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sp-portfolio-item-thumb">
+                                                <div class="sp-portfolio-item-box"></div>
+                                                <img src="images/projeto-araujo-autopecas-branding.png" alt="" title="Araújo Autopeças Branding">
+                                                <button class="sp-btn sp-btn-small sp-btn-dark-grey">visite o site<ion-icon name="share-alt"></ion-icon></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
