@@ -3,7 +3,6 @@ var btnContact = document.querySelector('.sp-btn-contact');
 var toggleModal = document.querySelectorAll('.sp-toggle-modal');
 var toggleMenu = document.querySelectorAll('.sp-toggle-menu');
 var menuMobile = document.querySelectorAll('.sp-menu-mobile');
-var btnMenuMobIcon = document.querySelectorAll('.sp-btn-menu-mobile ion-icon');
 
 //PÁGINA PRELOADER
 window.addEventListener('load', function () {
@@ -25,28 +24,30 @@ btnContact.addEventListener('click', function() {
 //Abrindo e fechando o Menu Mobile
 for (var m = 0; m < toggleMenu.length; m++) {
     toggleMenu[m].addEventListener('click', function () {
-        var overlay = document.querySelector('.sp-menu-overlay');
-        overlay.classList.toggle('sp-is-open');
-        menuMobile.classList.toggle('sp-menu-is-closed');
-        menuMobile.classList.toggle('sp-menu-is-open');
-
-        var icon = btnMenuMobIcon.getAttribute('name');
-
-        if (icon === 'menu') {
-            btnMenuMobIcon.setAttribute('name', 'close');
-        } else {
-            btnMenuMobIcon.setAttribute('name', 'menu');
-        }
-
+      var overlay = document.querySelector('.sp-menu-overlay');
+      overlay.classList.toggle('sp-is-open');
+      
+      for (var i = 0; i < menuMobile.length; i++) {
+        menuMobile[i].classList.toggle('sp-menu-is-closed');
+        menuMobile[i].classList.toggle('sp-menu-is-open');  
+      }
+  
+      var btnMenuMobIcon = this.querySelector('ion-icon');
+      var icon = btnMenuMobIcon.getAttribute('name');
+  
+      if (icon === 'menu') {
+        btnMenuMobIcon.setAttribute('name', 'close');
+      } else {
+        btnMenuMobIcon.setAttribute('name', 'menu');
+      }
     });
-}
+  };
 
 //Abrindo e fechando o Modal de Orçamento
 for (var i = 0; i < toggleModal.length; i++) {
     toggleModal[i].addEventListener('click', function () {
         var overlay = document.querySelector('.sp-overlay');
         var modalOcamento = document.querySelector('#sp-modal-orcamento');
-
         overlay.classList.toggle('sp-is-open');
         modalOcamento.classList.toggle('sp-is-open');
         modalOcamento.classList.toggle('sp-slide-top-in');

@@ -220,8 +220,8 @@ p {
     }
 
     .sp-btn-menu-mobile {
-        width: 54px;
-        height: 54px;
+        width: 50px;
+        height: 50px;
         display: block;
         border-radius: 50%;
         border: none;
@@ -239,7 +239,7 @@ p {
     }
 
     .sp-menu-mobile {
-        width: 240px;
+        width: 200px;
         height: 100vh;
         display: block;
         background-color: #000;
@@ -738,7 +738,7 @@ p {
 
 @media screen and (min-width: 992px) {
 
-    .sp-menu-mobile {
+    .sp-menu-mobile, .sp-btn-menu-mobile {
         display: none;
     }
     
