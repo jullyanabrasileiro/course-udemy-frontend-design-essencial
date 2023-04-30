@@ -1001,6 +1001,10 @@ p {
     padding-top: 30px;
 }
 
+.sp-pad-top-60 {
+    padding-top: 60px;
+}
+
 .sp-pad-left-30 {
     padding-left: 15px;
 }
