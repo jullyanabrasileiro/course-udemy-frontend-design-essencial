@@ -787,30 +787,57 @@ p {
     }
 
     .sp-slider-list .sp-portfolio-item-thumb {
-        width: 100%;
-        display: table;
-        padding: 30px 0 19px 0;
-        position: relative;
+        padding: 30px 50px 19px 0;
     }
 
     .sp-slider-list  .sp-portfolio-item-thumb img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        position: relative;
-        left: -100px;
-        transform: scale(0)
+        width: 120%;
+        max-width: 120%;
+        left: -60px;
     }
 
     .sp-slider-list .sp-portfolio-item-thumb > button {
-        margin-right: 30px;
+        margin-right: -23px;
+    }
 
+    .sp-navigator-counter span {
+        font-size: 70px;
+    }
+
+    .sp-navigator-counter::before {
+        height: 120px;
     }
 
 }
 
 @media screen and (min-width: 1200px) {
+    .sp-slider-list .sp-portfolio-item-thumb, .sp-portfolio-list .sp-portfolio-item-thumb {
+        width: 100%;
+        display: table;
+        padding: 75px 0 19px 0;
+        position: relative;
+    }
     
+    .sp-slider-list .sp-portfolio-item-thumb > button, .sp-portfolio-list .sp-portfolio-item-thumb > button {
+        margin-top: 18px;
+        margin-right: 75px;
+        float: right;
+    }
+
+    .sp-navigator-counter span {
+        font-size: 86px;
+    }
+
+    .sp-navigator-counter::before{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 112px;
+        background-color: #1C1C1C;
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
 }
 
 @media screen and (min-width: 1364px) {
