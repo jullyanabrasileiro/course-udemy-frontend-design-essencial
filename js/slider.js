@@ -15,7 +15,11 @@ var navItems = document.querySelectorAll('.sp-item-navigator a');
 var navCounter = document.querySelector('.sp-navigator-counter span');
 
 //Capturando larguras individuais
-var containerWidth = sliderContainer.parentElement.offsetWidth;
+if(window.innerWidth < 992) {
+    var containerWidth = sliderContainer.parentElement.offsetWidth - 30;
+} else {
+    var containerWidth = sliderContainer.parentElement.offsetWidth;
+};
 
 //Passando larguras dinânmicas
 sliderContainer.style.width = containerWidth + 'px';

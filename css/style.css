@@ -108,6 +108,7 @@ p {
         display: table;
         background-color: #1C1C1C;
         border: 30px solid #000;
+        overflow: hidden;
     }
 
     .sp-preloader {
@@ -230,7 +231,7 @@ p {
         position: fixed;
         right: 30px;
         top: 30px;
-        z-index: 1250;
+        z-index: 1000;
         cursor: pointer;
     }
 
@@ -415,7 +416,8 @@ p {
         display: table;
         position: absolute;
         left: 15px;
-        top: 26vh;
+        bottom: 45px;
+        z-index: 700;
     }
 
     .sp-navigator-counter {
@@ -782,6 +784,27 @@ p {
 
     .sp-menu a:hover:before {
         transform: scale(1, 1);
+    }
+
+    .sp-slider-list .sp-portfolio-item-thumb {
+        width: 100%;
+        display: table;
+        padding: 30px 0 19px 0;
+        position: relative;
+    }
+
+    .sp-slider-list  .sp-portfolio-item-thumb img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -100px;
+        transform: scale(0)
+    }
+
+    .sp-slider-list .sp-portfolio-item-thumb > button {
+        margin-right: 30px;
+
     }
 
 }
