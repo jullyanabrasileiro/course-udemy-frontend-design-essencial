@@ -431,18 +431,18 @@ p {
     .sp-navigator-counter::before{
         content: '';
         display: block;
-        width: 25px;
-        height: 112px;
+        width: 20px;
+        height: 110px;
         background-color: #1C1C1C;
         position: absolute;
-        top: -1px;
+        top: -10px;
         left: 0;
     }
 
     .sp-navigator-counter span {
         font-family: 'Okana', sans-serif;
         font-weight: bold;
-        font-size: 86px;
+        font-size: 60px;
     }
 
     .sp-item-navigator {
@@ -519,10 +519,10 @@ p {
     }
 
     .sp-slider-list .sp-portfolio-item {
+        margin-top: calc(26vh - 75px);
         display: block;
         height: 500px;
         float: left;
-        margin-top: calc(26vh - 75px);
     }
 
     .sp-portfolio-list .sp-portfolio-item { 
@@ -532,18 +532,25 @@ p {
     .sp-portfolio-list .sp-portfolio-item { 
         margin-bottom: 100px;
     }
+
+    .sp-portfolio-list .sp-portfolio-item p {
+        text-align: center;
+    }
+    
+    .sp-portfolio-list .sp-portfolio-item-info button {
+        margin: 0 auto;
+    }    
 
     .sp-portfolio-list {
         list-style: none;
     }
 
     .sp-slider-list .sp-portfolio-item-info {
-        width: calc (100% - 75px);
+        width: 200%;
         display: table;
         margin-top: 73px;
         position: relative;
         opacity: 0;
-        left: -75px;
     }
 
     .sp-portfolio-list  .sp-portfolio-item-info {
@@ -728,6 +735,12 @@ p {
         padding: 60px 0;
     }
 
+    /* Utilitárias */
+    .sp-title-medium {
+        font-size: 40px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -800,42 +813,81 @@ p {
         margin-right: -23px;
     }
 
+    .sp-portfolio-navigator {
+        width: 145px;
+        height: 400px;
+        display: table;
+        position: absolute;
+        left: 15px;
+        bottom: 300px;
+        z-index: 700;
+    }
+    
     .sp-navigator-counter span {
         font-size: 70px;
     }
 
-    .sp-navigator-counter::before {
-        height: 120px;
+    /* Utilitárias */
+
+    .sp-title-medium {
+        font-size: 40px;
+        text-align: left;
     }
+
+    .sp-portfolio-list .sp-portfolio-item p {
+        text-align: left;
+    }
+
+    .sp-portfolio-list .sp-portfolio-item-info button {
+        margin: 0 auto;
+    } 
+
+    .sp-slider-list .sp-portfolio-item-info {
+        width: calc (100% - 75px);
+        left: -75px;
+    }
+
 
 }
 
 @media screen and (min-width: 1200px) {
-    .sp-slider-list .sp-portfolio-item-thumb, .sp-portfolio-list .sp-portfolio-item-thumb {
+
+    .sp-slider-list .sp-portfolio-item-thumb {
         width: 100%;
         display: table;
         padding: 75px 0 19px 0;
         position: relative;
+        margin-top: 45px;
     }
     
-    .sp-slider-list .sp-portfolio-item-thumb > button, .sp-portfolio-list .sp-portfolio-item-thumb > button {
+    .sp-slider-list .sp-portfolio-item-thumb > button {
         margin-top: 18px;
         margin-right: 75px;
         float: right;
     }
 
+    .sp-portfolio-navigator {
+        width: 145px;
+        height: 400px;
+        display: table;
+        position: absolute;
+        left: 15px;
+        bottom: 45px;
+        z-index: 700;
+    }
+
     .sp-navigator-counter span {
-        font-size: 86px;
+        font-size: 70px;
     }
 
     .sp-navigator-counter::before{
         content: '';
         display: block;
-        width: 25px;
-        height: 112px;
+        width: 20px;
+        height: 110px;
         background-color: #1C1C1C;
         position: absolute;
-        top: -1px;
+        top: -10px;
         left: 0;
     }
 }
