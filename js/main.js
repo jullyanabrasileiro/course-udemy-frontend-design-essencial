@@ -54,10 +54,6 @@ for (var i = 0; i < toggleModal.length; i++) {
     });
 };
 
-var postGallery = document.querySelector('.sp-post-gallery');
-var postGalleryHeight = postGallery.clientHeight;
-postGallery.style.height = (postGallery.clientHeight - 270) + 'px';
-
 //Animando elementos on Scroll com Waypoints
 var myScrollDown = document.querySelector('.sp-scroll-down');
 var waypoint = new Waypoint({

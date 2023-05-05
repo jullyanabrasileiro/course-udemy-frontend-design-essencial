@@ -139,16 +139,20 @@ p {
     }
 
     .sp-modal {
-        width: 800px;
+        width: 90%;
         display: none;
         padding: 30px;
-        position: fixed;
+        position: absolute;
         top: -100%;
-        left: 0;
-        right: 0;
+        left: 5%;
+        right: 5%;
         margin: 0 auto;
         z-index: 1200;
         opacity: 0;
+    }
+
+    .sp-field, .sp-textarea {
+        margin-bottom: 10px;
     }
 
     .sp-modal-header, .sp-modal-body, .sp-form {
@@ -170,24 +174,24 @@ p {
         border: none;
         background-color: #1C1C1C;
     }
-    
-    label {
-        margin-bottom: 10px;
-        font-size: 16px;
-        display: inline-block;
-    }
-
+   
     .sp-field, .sp-textarea {
         width: 100%;
         background-color: #1C1C1C;
         color: #fff;
         border: none;
-        font-size: 16px;
+        font-size: 14px;
         text-indent: 15px;
+        margin-bottom: 10px;
     }
 
     .sp-field {
         height: 45px;
+    }
+
+    .sp-field label {
+        font-size: 14px;
+        margin-bottom: 12px;
     }
 
     .sp-topbar {
@@ -852,6 +856,19 @@ p {
 
 @media screen and (min-width: 1200px) {
 
+    .sp-modal {
+        width: 800px;
+    }
+
+    .sp-field, .sp-textarea {
+        margin-bottom: 15px;
+    }
+
+    .sp-field label {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
     .sp-slider-list .sp-portfolio-item-thumb {
         width: 100%;
         display: table;
@@ -890,6 +907,7 @@ p {
         top: -10px;
         left: 0;
     }
+
 }
 
 @media screen and (min-width: 1364px) {
